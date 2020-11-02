@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long int x;
+    cin >> x;
+    double y;
+    cin >> y;
+    double z;
+    if(x%5==0){
+        if((x<y) && (y>=(x+0.5))){
+            z=(y- x-(0.5));
+            cout<<z;
+        }
+        else{
+            cout<<y;
+        }
+       }
+    else{
+            cout<<y;
+ 
