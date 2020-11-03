@@ -1,0 +1,35 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+ int n;
+ cin>>n;
+ int a[n];
+ int b[n];
+ for(int i=0;i<n;i++){
+     cin>>a[i]>>b[i];
+ }
+ int max,s1,s2,ans,q;
+ for(int i=0;i<n;i++){
+     int lead;
+     s1+=a[i];
+     s2+=b[i];
+     if(s1>s2){
+         lead=(s1-s2);
+     }
+     else{
+         lead=s2-s1;
+     }
+    if(lead>max){
+        max=lead;
+        if(s1>s2){
+            ans=1;
+        }
+        else{
+            ans=2;
+        }
+    } 
+    
+ }
+ cout<<ans<<" "<<max<<endl;
+   return 0;
+}
